@@ -1,6 +1,3 @@
-// API KEY
-// process.env.REACT_APP_IGNITE_API;
-
 // Key URL
 const key_url = `key=${process.env.REACT_APP_RAWG_API}`;
 
@@ -38,4 +35,4 @@ const nextYear = `${currentYear + 1}-${currentMonth}-${currentDay}`;
 // Popular Games
 const popular_games = `games?key=${key_url}&dates=${lastYear},${currentDate}&ordering=-rating&page_size=10`;
 
-const popularGamesURL = () => `${base_url}${popular_games}`;
+export const popularGamesURL = () => `${base_url}${popular_games}`;
